@@ -9,5 +9,5 @@
 2. 使用 telnet 127.0.0.1 8080 连接
 3. 发送数据，并查看控制台的输出信息
 
-![运行结果](../../../../../../../../images/test1/discardserver.png)
+![运行结果](../../../../../../../../images/test1_discardserver.png)
 
