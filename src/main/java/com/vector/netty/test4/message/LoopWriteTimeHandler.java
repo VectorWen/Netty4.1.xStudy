@@ -15,7 +15,6 @@ public class LoopWriteTimeHandler extends ChannelInboundHandlerAdapter {
     @Override
     public void channelActive(ChannelHandlerContext ctx) throws Exception {
 
-
         for (int i = 0; i < 100; i++) {
             //分配一个ByteBuf，用来存储时间戳
             final var buf = ctx.alloc().buffer(8);
