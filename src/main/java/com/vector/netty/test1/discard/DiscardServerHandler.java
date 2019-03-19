@@ -46,6 +46,10 @@ public class DiscardServerHandler extends ChannelInboundHandlerAdapter {
         } finally {
             ReferenceCountUtil.release(msg);
         }
+
+        //自己读取了ByteBuf
+		//需要自己调用release 回收
+        in.release();
 	}
 
 	/**

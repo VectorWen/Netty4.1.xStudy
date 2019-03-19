@@ -20,6 +20,7 @@ public class WriteTimeHandler extends ChannelInboundHandlerAdapter {
         buf.writeLong(System.currentTimeMillis());
 
         //发送给Client
+        //把buf 交给别人，自己别管了
         final var f = ctx.writeAndFlush(buf);
 
         //等待写完
