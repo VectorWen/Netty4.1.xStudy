@@ -1,5 +1,6 @@
 package com.vector.netty.test2.string;
 
+import io.netty.channel.ChannelHandler;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
 
@@ -7,6 +8,7 @@ import io.netty.channel.ChannelInboundHandlerAdapter;
  * @author: vector.huang
  * @date: 2019/03/18 13:10
  */
+@ChannelHandler.Sharable
 public class StringServerHandler extends ChannelInboundHandlerAdapter {
 
     @Override
